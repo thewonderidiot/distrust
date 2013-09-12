@@ -1,3 +1,7 @@
+all: install
+
+install: distrust
+	rustpkg install distrust
+
 distrust:
-	mkdir -p build
-	rustc src/main.rs -o build/$@
+	rustpkg build distrust
