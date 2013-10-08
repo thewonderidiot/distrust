@@ -6,7 +6,7 @@
 #[crate_type = "bin"];
 
 extern mod extra;
-use extra::getopts::*;
+use extra::getopts::{getopts, optflag};
 use std::path::Path;
 use std::os;
 use std::io;
